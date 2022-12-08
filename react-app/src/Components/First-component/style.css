@@ -1,0 +1,34 @@
+.btn {
+    font-size: 25px;
+    padding: 5px;
+    background-color: black;
+    color: #26df66;
+    border: 4px solid #26df66;
+    margin: 20px auto;
+    display: block;
+    width: 80px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #26df66 !important;
+    color: black !important;
+    transition-duration: 0.4s;
+    transform: scale(0.85);
+}
+
+.inp {
+    border: 4px solid #26df66;
+    background-color: black;
+    color: #26df66;
+    width: 300px;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+    color: #26df66;
+}
