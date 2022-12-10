@@ -15,6 +15,10 @@ class FirstComponent extends Component {
         if(event.target.innerHTML === "+") {
             first_inp.value = first_inp.value * 1 + this.state.number;
         } else {
+            if((first_inp.value - this.state.number) < 0) {
+                alert("The value can't be less then 0!");
+                return;
+            }
             first_inp.value -= this.state.number;
         }
     }
