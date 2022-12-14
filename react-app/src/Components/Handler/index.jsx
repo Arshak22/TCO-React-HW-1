@@ -23,7 +23,7 @@ export class Handler extends Component {
     }
 
     HandleChange = (e) => {
-        if(e.target.value == "") {
+        if(e.target.value === "") {
             this.setState({value: 1});
             return;
         }
@@ -31,6 +31,7 @@ export class Handler extends Component {
     }
 
     render() {
+        const{text, image} = this.props;
         return (
             <div>
                 <button className="btn" onClick={this.Plus}>+</button>
@@ -38,6 +39,8 @@ export class Handler extends Component {
                 <button className="btn" onClick={this.Minus}>-</button>
                 <h1>Change the Increment and Decrement Values</h1>
                 <input className="inp" type="number" onChange={this.HandleChange}/>
+                <p>{text}</p>
+                {image ? <img src={image} alt="nkar"/>: null}
             </div>
         );
     }

@@ -28,7 +28,7 @@
     text-align: right;
 }
 
-h1 {
+h1, p {
     text-align: center;
     color: #26df66;
 }
